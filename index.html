@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="icon" type="image.png" href="Images/dice.png"> <!-- Favicon -->
+    <meta name="description" content="Jeu de dé réalisé pour l'évaluation STUDI &quot;Dynamiser vos 
+      sites web avec Javascript&quot;"> <!-- Description of the page -->
+    <meta name="keywords" content="Dice game, jeu de dé"/>
+    <meta name="author" content="Laurent BOURGES"/>
+    <meta name="copyright" content="LB"/>
+    <meta name="robots" content="index"/> 
+    <!-- link CDN Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Link Style sheet CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body class="container mt-3">
+    <h1 class="title text-center mb-3"><img class="des" src="Images/dice.png" alt="image d'un dé">
+      DICE GAME<img class="des" src="Images/dice.png" alt="image d'un dé"></h1>
+    <div class="row tapis align-items-center d-flex flex-column flex-sm-row">
+      <section class="col-8 col-sm-4 text-center"><!----------------- Player 1 -->
+        <div>
+          <h2 id="player1" class="player">PLAYER 1</h2>
+          <p id="totalScore1">0</p>
+        </div>
+        <div class="currentScores">
+          <h3>CURRENT</h3>
+          <p  id="currentScore1">0</p>
+        </div>
+      </section>
+      <section class="game col-8 col-sm-4 text-center"><!---------- Central Col -->
+        <h3 id="newGame"><i class="bi bi-plus-circle"></i> NEW GAME</h3>
+        <h4 id="rules"><i class="bi bi-card-text"></i> RULES</h4>
+        <div id="de" class="my-4">
+        </div>
+        <h3 id="rollDice"><i class="bi bi-arrow-repeat"></i> ROLL DICE</h3>
+        <h3 id="hold"><i class="bi bi-box-arrow-in-down"></i> HOLD</h3>
+      </section>
+      <section class="col-8 col-sm-4 text-center"><!----------------- Player 2 -->
+        <div>
+          <h2 id="player2" class="player">PLAYER 2</h2>
+          <p id="totalScore2">0</p>
+        </div>
+        <div class="currentScores">
+          <h3>CURRENT</h3>
+          <p id="currentScore2">0</p>
+        </div>
+      </section>
+    </div>
+  <!-- links CDN Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+    <noscript>
+      <p>Merci d'activer JavaScript afin de pouvoir bénéficier de toutes les fonctionnalités de notre site.</p>
+    </noscript>
+  <!-- link Javascript file -->
+    <script type="module" src="script.js" async></script>
+  </body>
+</html>
